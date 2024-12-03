@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kufam:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Protest+Revolution&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+   
+}
+.language-selector button{
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    color: white;
+    background-color: #4a897f;
+}
+body{
+    background-color: #ded9c5;
+    font-family: "Kufam", sans-serif;
+}
+.container{
+    background: url(images/montain25.jpeg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain; 
+    
+    height: 130vh; 
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative; 
+}
+header img {
+    width: 150px;
+}
+header ul {
+    display: flex;
+    gap: 25px;
+}
+header ul li a {
+    font-size: 18px;
+    color: #4a897f;   
+}
+header ul li a:hover {
+    border-bottom: #054c3c solid 2px;
+    color: #054c3c;
+}
+header ul li .navbar{
+    color: #4a897f;
+}
+header ul li .navbar:hover{
+    border-bottom: #054c3c solid 2px;
+    color: #054c3c;
+}
+ul li a i{
+    color: #044833;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+}
+/* landing */
+
+.content{
+    width: 600px;
+    margin: 150px;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #334e4e;
+    text-shadow: 4px -4px 7px rgba(163,180,161,0.74);
+}
+ p{
+    font-size: 20px;
+    margin-top: 18px;
+    font-family: "Lora", serif;
+}
+ .Title {
+   padding: 5%;
+   font-size: 50px;
+   color: #ded9c5;
+}
+.text{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text p{
+    width: 500px;
+    margin-bottom: 70px;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: -10;
+}
+/* about */
+.About {
+    background-color: #52635e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+ 
+}
+.About img ,.img{
+    filter: drop-shadow(1px 1px 20px #d77244);
+    margin-bottom: 70px;
+    width: 300px;
+}
+.About p{
+    /* padding: 20px; */
+    font-size: 25px;
+}
+.Gallery {
+    min-height: 100vh;
+    margin: 0;
+    background: #7b8c83;
+    
+}
+.Gallery h1 {
+    color: #ded9c5;
+    margin: 0;
+    
+}
+.Gallery_text {
+    text-align: center;
+}
+.Gallery_text h2 {
+ font-family: "Protest Revolution", serif;
+ color: #ded9c5;
+ font-style: italic;
+}
+
+ 
+.text-container {
+    width: 400px;
+    margin: 20px auto;
+    line-height: 1.5;
+}
+.text-container span {
+    display: block; 
+    margin: 10px 0; 
+    font-size: 20px; 
+}
+
+ .h2{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.program{
+ text-align: center;   
+}
+.program h1{
+ 
+ font-family: "Protest Revolution", serif;
+ font-size:50px;
+ color: #054c3c;
+}
+.program ul li{
+   font-family: "Protest Revolution", serif;
+    font-size: 19px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+ .card{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #52635e;
+    border-radius: 10px;
+    color: white;
+    width: 420px;
+}
+.card img{
+    width: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 10px;
+}
+.card h3 ,h2 {
+    margin: 18px 0;
+}
+.card h5{
+    margin-bottom: 25px;
+}
+.card h5 a{
+    color: white;
+}
+.swiper{
+    width: 90%; 
+    text-align: center;
+}
+  .top_cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .images{
+    text-align: center;
+    margin-top: 30px;
+     border-radius: 20px;
+
+  }
+  .images img{
+    width: 400px;
+    padding: 10px;
+    
+  }
+ .swiper-button{
+ position: relative;
+ top: 195%;
+ }
+ .swiper-radio{
+  margin-top: 30px;
+ }
+ .swiper-button div{
+  color: #003060;
+  width: 30px; 
+  height: 30px; 
+  font-size: 18px; 
+ }
+ .swiper-button div:nth-child(1) {
+  position: absolute;
+  left: 45px;
+}
+.swiper-button div:nth-child(2) {
+  position: absolute;
+  left: 60px; 
+}
+
+.swiper-button div::after {
+  font-size: 18px; 
+
+}
+.description {
+    margin-left: 60px;
+}
+.description p{
+    width: 500px;
+}
+.description h1{
+font-size: 30px;
+color: #d77244;
+margin: 10px 0;
+}
+.description h2{
+font-size: 26px;
+color: #df9b74;
+margin: 10px 0;
+}
+.description ul li{
+font-size: 19px;
+margin: 10px 0;
+}
+.information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Bookthistour h1{
+    margin: 0 auto;
+    font-size: 29px;
+    font-family: "Protest Revolution", serif;
+    background-color: #d77244;
+    color: #fff;
+    width: 70%;
+    padding: 6px;
+}
+.contactform{
+    width: 100%;
+    padding: 40px;
+    background: #fff;
+  }
+  .contactform h2{
+   font-weight: 500;
+   font-size: 30px;
+    color: #333;
+  }
+  .contactform .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .contactform .inputBox input,
+  .contactform .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+  .contactform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size:  16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+  .contactform .inputBox input:focus ~ span,
+  .contactform .inputBox input:valid ~ span,
+  .contactform .inputBox textarea:focus ~ span,
+  .contactform .inputBox textarea:valid ~ span{
+    color: #4a897f;
+    font-size: 12px;
+    transform: translateY(-20px);
+  }
+  .contactform .inputBox input[type="submit"]{
+      width: 50%;
+      background: #4a897f;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      font-size: 18px;
+  }
+ .contact .containerContact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+ }
+ .contact .contactform{
+    width: 50%;
+  }
+.team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team .img{
+    width: 500px;
+}
+.teamimage img{
+width: 100px;
+border-radius: 50%;
+transition: transform .5s;
+}
+.teamimage img:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    -ms-transform: scale(1.5); 
+   -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+}
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #4a897f;
+}
+@media only screen and (max-width: 768px)  {
+    body{
+        background-size: contain;
+    }
+    .container{
+        background:none;      
+    }
+    header ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        right: 0;
+        background: white;
+        z-index: 10; 
+    }
+    header ul.show {
+        display: flex; 
+    }
+    .menu-toggle {
+        display: block; 
+    }
+    header ul li {
+        text-align: center; 
+        margin: 10px 0;   
+    }
+    header ul li .withe{
+      background-color: #334e4e;
+       padding: 10px;
+    }
+    header ul {
+        gap: 50px;
+    }
+    header ul li .navbar{
+        background-color: white;
+    }
+    .content h1{
+        font-size: 20px;
+        width: 300px;
+        
+    }
+    .content p{
+        font-size: 20px;
+        width: 300px;
+    }
+    .content{
+       position: absolute;
+       top: 30%;
+       left: 68%;
+       transform: translate(-50%, -50%);
+    }
+
+    .c {
+        min-width: 500px;
+        width: 500px;
+        margin-bottom: 40px;
+      }
+      .card img{
+        width: 320px;
+      }
+      .card {
+        width: 350px;
+      }
+    .information {
+      width: 350px;
+    }
+    .description p{
+      width: 300px;
+    }
+    .information ul li {
+        font-size: 18px;
+    }
+    .swiper-button div:nth-child(1) {
+        position: absolute;
+        left: 45px;
+        top: 40px;
+      }
+      .swiper-button div:nth-child(2) {
+        position: absolute;
+        left: 60px; 
+        top: 40px;
+      }
+  
+    .images img{
+        width: 300px;
+        
+      }
+      .swiper-slide img{
+        margin-top: 20%;
+      }
+      .About p {
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+    }
+    .About h1 , .text h1 ,h5 {
+        text-align: center;
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto;
+    }
+   
+   .About{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .contact .containerContact{
+   flex-direction: column;
+   margin-top: 30px;
+   text-align: center;
+ }
+ .contact .contactform{
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  footer .text p{
+    font-size: 17px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1280px)  {
+    
+    .content h1{
+        font-size: 30px;
+        width: 400px;
+    }
+    .content p{
+        font-size: 20px;
+        width: 400px;
+    }
+  
+
+    .c {
+        min-width: 500px;
+        width: 500px;
+        margin-bottom: 40px;
+      }
+      .card img{
+        width: 320px;
+      }
+      .card {
+        width: 350px;
+      }
+    .information {
+      width: 350px;
+    }
+    .description p{
+      width: 300px;
+    }
+    .information ul li {
+        font-size: 18px;
+    }
+    .swiper-button div:nth-child(1) {
+        position: absolute;
+        left: 45px;
+        top: 40px;
+      }
+      .swiper-button div:nth-child(2) {
+        position: absolute;
+        left: 60px; 
+        top: 40px;
+      }
+  
+    .images img{
+        width: 300px;
+        
+      }
+      .swiper-slide img{
+        margin-top: 20%;
+      }
+      .About p {
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+    }
+
+    .About h1 , .text h1 ,h5 {
+        text-align: center;
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto;
+    }
+   
+   .contact .containerContact{
+   flex-direction: column;
+   margin-top: 30px;
+   text-align: center;
+ }
+ .contact .contactform{
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  footer .text p{
+    font-size: 17px;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1100px)  {
+    .content h1{
+        font-size: 30px;
+        width: 400px;
+       
+    }
+    .content p{
+        font-size: 20px;
+        width: 400px;
+    }
+  .content{
+    margin-left: 30px;
+  }
+
+    .c {
+        min-width: 500px;
+        width: 500px;
+        margin-bottom: 40px;
+      }
+      .card img{
+        width: 320px;
+      }
+      .card {
+        width: 350px;
+      }
+    .information {
+      width: 350px;
+    }
+    .description p{
+      width: 300px;
+    }
+    .information ul li {
+        font-size: 18px;
+    }
+    .swiper-button div:nth-child(1) {
+        position: absolute;
+        left: 45px;
+        top: 40px;
+      }
+      .swiper-button div:nth-child(2) {
+        position: absolute;
+        left: 60px; 
+        top: 40px;
+      }
+  
+    .images img{
+        width: 300px;
+        
+      }
+      .swiper-slide img{
+        margin-top: 20%;
+      }
+      .About p {
+        text-align: center;
+        font-size: 16px;
+        width: 300px;
+    }
+    .About h1 , .text h1 ,h5 {
+        text-align: center;
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto;
+    }
+   
+
+   .contact .containerContact{
+   flex-direction: column;
+   margin-top: 30px;
+   text-align: center;
+ }
+ .contact .contactform{
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  footer .text p{
+    font-size: 17px;
+    width: 300px;
+  }
+   
+}
